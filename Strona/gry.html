@@ -1,0 +1,100 @@
+<!-- gry.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gry</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #d63384;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+		img {
+            width: 100%;  /* Dopasuje szerokość obrazka do szerokości kontenera */
+            height: auto; /* Zachowa proporcje */
+            display: block; /* Usunie marginesy wokół obrazka */
+            margin: 0 auto; /* Wyśrodkuje obrazek */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Angelika Fedorowicz</h1>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="gry.html">Gry</a>
+            <a href="anime.html">Anime</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Gry</h1>
+        <p>Na ten moment najwięcej gram w takie gry jak <a href="https://www.leagueoflegends.com/pl-pl/">League of Legends</a>, <a href="https://www.minecraft.net/pl-pl">Minecraft</a> oraz <a href="https://playvalorant.com/pl-pl/?gclsrc=aw.ds&gad_source=1&gad_campaignid=10161920150&gclid=CjwKCAjwz_bABhAGEiwAm-P8YVam-3c3ZKQNIgoeVe0E81m5ELc2oAxYfCnwEgfEUD67EcoZyvA8BxoCTrkQAvD_BwE">Valorant</a></p> 
+
+        <h2>Mój filmik z League of Legends</h2>
+        <video width="640" height="360" controls>
+            <source src="video/lol.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje odtwarzania wideo.
+        </video>
+		
+		<h2>To moję konto w grze League of Legends</h2>
+		<img src="picture/konto.jpg" alt="konto"/> 
+        
+		<h2>Mój filmik z Valoranta</h2>
+        <video width="640" height="360" controls>
+            <source src="video/valorant.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje odtwarzania wideo.
+        </video>
+    </div>
+
+</body>
+</html>
